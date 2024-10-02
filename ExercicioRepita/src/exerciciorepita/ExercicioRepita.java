@@ -37,7 +37,13 @@ public class ExercicioRepita {
             
             // listando valores diferente de 0 (zero encerra o programa)
             if (n != 0){
-                listaValores += ("<br> (" + totalValores + "º) " + n);
+                if (n % 2 == 0){
+                    totalPar +=1;
+                    listaValores += ("<br> (" + totalValores + "º) " + n) + " > PAR";
+                }else{
+                    totalImpar +=1;
+                    listaValores += ("<br> (" + totalValores + "º) " + n) + " > IMPAR";
+                }              
             } else{
                 listaValores += ("</html>");
             }            
@@ -45,12 +51,16 @@ public class ExercicioRepita {
             if (n > 100){ // verifica quais números são maior que cem
                 acimaCem += 1;
             }
+            
             // verificando quais números são par ou impar (0 encerra o programa)
-            if (n % 2 == 0 && n != 0){
-                totalPar += 1;
-            } else if (n % 2 == 1 && n !=0){
-                totalImpar += 1;
-            }
+            /* 
+                if (n % 2 == 0 && n != 0){
+                    totalPar += 1;
+                }else if (n % 2 == 1 && n !=0){
+                    totalImpar += 1;
+            
+            }*/
+            
         } while (n != 0);
         
         // tirando a média total

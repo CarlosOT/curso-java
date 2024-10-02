@@ -77,9 +77,7 @@ public class ExercicioRepita {
                 + "</html>", "Resultado Final",JOptionPane.INFORMATION_MESSAGE);
         
         /* JOptionPane.showMessageDialog(null, "Você digitou o valor " + n); */
-        
-        
-        
+                      
     }
     
 }

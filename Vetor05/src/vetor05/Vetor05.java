@@ -17,11 +17,12 @@ public class Vetor05 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int v[] = new int[20];
-        Arrays.fill(v, 0);
-        
+        int v[] = new int[10];
+        Arrays.fill(v, 0);      
+        int contador = 0;
         for(int valor:v){
-            System.out.print(valor + " ");
+            contador++;
+            System.out.println("[posição " + contador + "]" + " valor inserido dentro do vetor: " + valor);
         }
     }
     

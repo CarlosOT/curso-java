@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ExercicioVetorSwing">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/ExercicioVetorSwing.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

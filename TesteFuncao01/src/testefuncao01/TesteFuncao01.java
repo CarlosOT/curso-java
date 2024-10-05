@@ -14,15 +14,20 @@ public class TesteFuncao01 {
      * @param args the command line arguments
      */
     
-    static void soma(int a, int b){
+    static void procedimentoSoma(int a, int b){
         int s = a + b;
         System.out.println("A soma de " + a + " + " + b + " é " + s);
-    }
+    } // PROCEDIMENTO (NÃO TEM RETORNO)
+    static int funcaoSoma(int a, int b){
+        int s = a + b;
+        return s;
+    } //FUNÇÃO (TEM RETORNO)
     
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Começou o programa");
-        soma(3,4);
+        int sm = funcaoSoma(3,4);
+        System.out.println("A soma é " + sm);
     }
     
 }
